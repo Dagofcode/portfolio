@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,4 +14,126 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root {
+  --main-color: #5b86e5;
+  --next-color: #36d1dc;
+}
+
+.gradient {
+  background: linear-gradient(234deg, var(--main-color), var(--next-color));
+  background-size: 400% 400%; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  -o-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar div {
+  margin: 0 5vw;
+  font-size: 1.5rem;
+}
+.navbar div:nth-child(2) {
+  width: 30vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.landing-container {
+  width: 100vw;
+  height: 90vh;
+}
+.landing-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.landing-content div:nth-child(1) img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 10vh;
+  border-radius: 50%;
+}
+.landing-info {
+  opacity: 0.8;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+.landing-info h1 {
+  color: white;
+}
+.header {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  clip-path: polygon(100% 0, 100% 24%, 87% 84%, 0 100%, 0 0);
+}
+.p-description {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 30%;
+}
+strong {
+  color: var(--next-color);
 }
