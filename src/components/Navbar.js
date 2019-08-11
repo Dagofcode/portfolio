@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="navbar gradient">
+    <div className="navbar">
       <div>
         <span>Title</span>
       </div>
