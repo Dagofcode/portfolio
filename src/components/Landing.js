@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import me from "../images/me.JPG";
+import ProjectList from "./Projects/ProjectList";
 
 export default class Landing extends Component {
   render() {
@@ -25,6 +26,7 @@ export default class Landing extends Component {
           </div>
         </div>
         <div />
+        <ProjectList />
       </div>
     );
   }

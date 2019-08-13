@@ -3,7 +3,16 @@ import "./ProjectList.css";
 
 const ProjectList = props => (
   <div className="project__list">
-    <div className="carousel" />
+    <div className="carousel">
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+      <div className="block" />
+    </div>
   </div>
 );
 
