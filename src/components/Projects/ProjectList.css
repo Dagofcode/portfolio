@@ -14,7 +14,7 @@
   background-color: var(--main-color);
 }
 .block {
-  width: 300px;
+  width: 200px;
   height: 300px;
   background-color: black;
   border: 1px solid white;
